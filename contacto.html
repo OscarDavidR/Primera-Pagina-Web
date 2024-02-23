@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <html lang="es"></html>
+    <title>Contacto - Baberia Alura</title>
+    <link rel="stylesheet" href="reset.css/reset.css" />
+    <link rel="stylesheet" href="style-productos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1>
+          <img
+            src="imagenes2/imagenes/logo.png"
+            alt="Logo de la Barberia Alura"
+          />
+        </h1>
+        <nav>
+          <ul class="listaNavegacion">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.hmtl">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="bloque-contacto">
+        <form>
+          <label for="nombreapellido">Nombre y apellido</label>
+          <input
+            type="text"
+            id="nombreapellido"
+            class="input-padron"
+            required
+          />
+
+          <label for="correoelectronico">Correo electrónico</label>
+          <input
+            type="email"
+            id="correoelectronico"
+            class="input-padron"
+            required
+            placeholder="nombre@dominio.com"
+          />
+
+          <label for="telefono">Numero telefónico</label>
+          <input
+            type="tel"
+            id="telefono"
+            class="input-padron"
+            required
+            placeholder="xxxx-xxxx"
+          />
+
+          <label for="mensajeusuario">Mensaje</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensajeusuario"
+            class="input-padron"
+          ></textarea>
+          <fieldset>
+            <legend>¿Cómo le gustaría que lo contactemos?</legend>
+            <label for="radio-email"
+              ><input
+                type="radio"
+                name="contacto"
+                value="email"
+                id="radio-email"
+              />
+              Correo electrónico</label
+            >
+            <label for="radio-whatsapp"
+              ><input
+                type="radio"
+                name="contacto"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />
+              WhatsApp</label
+            >
+
+            <label for="radio-telefono"
+              ><input
+                type="radio"
+                name="contacto"
+                value="telefono"
+                id="radio-telefono"
+              />
+              Teléfono</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>¿En cuál horario prefiere ser atendido?</legend>
+            <select id="listaseleccion">
+              <option>Mañana</option>
+              <option>Tarde</option>
+              <option>Noche</option>
+            </select>
+          </fieldset>
+
+          <label id="novedades"
+            ><input type="checkbox" checked /> ¿Le gustaría recibir novedades y
+            ofertas de la Barbería Alura?</label
+          >
+          <input id="botonformulario" type="submit" value="Enviar Formulario" />
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>8:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>8:00 am - 5:00 pm</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>8:00 am - 4:00 pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bloque-imagenes">
+        <img
+          class="imagen-contacto"
+          src="diferenciales/diferenciales/diferenciales 2.jpg"
+        />
+        <img
+          class="imagen-contacto"
+          src="diferenciales/diferenciales/diferenciales 3.jpg"
+        />
+        <img
+          class="imagen-contacto"
+          src="diferenciales/diferenciales/diferenciales.jpg"
+        />
+      </div>
+    </main>
+    <footer>
+      <img
+        src="imagenes2/imagenes/logo-blanco.png"
+        alt="Logo de la Barberia Alura"
+      />
+      <p class="copyright">&copy;Copyright Barberia Alura - 2024</p>
+    </footer>
+  </body>
+</html>

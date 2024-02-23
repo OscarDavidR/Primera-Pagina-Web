@@ -1,0 +1,445 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+header {
+  background: linear-gradient(120deg, white 50%, black 10%);
+  padding: 20px 0px;
+  border: none;
+}
+
+header:hover {
+  background-color: rgb(183, 183, 183);
+}
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 126px;
+  right: 0px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 40px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.listaProductos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.listaProductos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border: 2px outset rgb(0, 0, 0);
+  border-top-width: 6px;
+  border-right-width: 6px;
+  border-radius: 10px;
+  border-bottom-left-radius: 20px;
+}
+
+.listaProductos li:hover {
+  border-color: gold;
+  cursor: pointer;
+  transition: 0.7s all;
+}
+
+.listaProductos li:hover h2 {
+  font-size: 32px;
+}
+
+.listaProductos li:hover .precioServicio {
+  color: rgb(0, 168, 0);
+}
+
+.listaProductos li:active {
+  border-color: rgb(0, 173, 0);
+}
+
+.listaProductos h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.descripcionServicio {
+  font-size: 20px;
+}
+
+.precioServicio {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  background: url(imagenes2/imagenes/bg.jpg);
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background: white;
+  }
+  .logoEncabezado {
+    text-align: center;
+  }
+  nav {
+    position: static;
+  }
+
+  .listaNavegacion a {
+    color: black;
+    font-size: 100%;
+  }
+  .caja,
+  .bloquePrincipal,
+  .listaProductos {
+    width: auto;
+  }
+  .listaProductos li {
+    width: auto;
+  }
+  footer {
+    width: auto;
+  }
+}
+
+/* aqui inicia para la pagina de contacto*/
+
+.bloque-imagenes {
+  width: 825px;
+  height: 1142.1px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #382e26;
+  float: right;
+}
+
+.imagen-contacto {
+  width: 450px;
+  display: inline-block;
+  margin: 40px 0 20px 0;
+  border: solid white 2px;
+  opacity: 40%;
+}
+
+.imagen-contacto:hover {
+  border-width: 4px;
+  scale: 1.05;
+  transition: 1s;
+  opacity: 100%;
+}
+
+.bloque-contacto {
+  width: 550px;
+  margin: 0 0 0 40px;
+  display: inline-block;
+}
+
+form {
+  margin: 40px auto;
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 3px 0;
+}
+
+.input-padron {
+  display: inline-block;
+  margin: 0 0 30px 0;
+  padding: 5px;
+  width: 500px;
+  font-size: 18px;
+  font-family: Helvetica;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+legend {
+  margin: 30px 0;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: Helvetica;
+  padding-top: 15px;
+}
+
+#novedades {
+  margin: 15px 0;
+}
+
+#botonformulario {
+  width: 40%;
+  background-color: rgb(0, 79, 0);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+#botonformulario:hover {
+  background-color: rgb(122, 180, 34);
+  font-size: 20px;
+  transform: scale(1.05);
+}
+
+#listaseleccion {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+#listaseleccion:hover {
+  border-color: olivedrab;
+}
+
+table {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+thead {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .caja {
+    position: static;
+  }
+  .bloque-contacto,
+  .bloque-imagenes {
+    margin: auto;
+    width: auto;
+  }
+  .bloque-contacto form {
+    width: auto;
+  }
+  .bloque-contacto .input-padron {
+    width: 100%;
+  }
+}
+
+/* CSS para nuestro home */
+.banner {
+  width: 100%;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.bloquePrincipal {
+  width: 940px;
+  margin: 0 auto;
+  background-color: #fefefe;
+}
+.bloquePrincipal p {
+  margin: 0 0 30px 0;
+}
+
+.bloquePrincipal strong {
+  font-weight: bold;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 30px;
+  margin: 15px 0 50px 0;
+  clear: left;
+  padding: 30px;
+}
+
+.utensilios {
+  width: 38%;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.utensilios {
+  border-radius: 5%;
+}
+
+.utensilios:hover {
+  border-width: 4px;
+  scale: 1.02;
+  transition: 1s;
+  opacity: 100%;
+}
+
+.primerParrafo,
+.segundoParrafo {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.mision1,
+.mision2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.mision2 em {
+  font-style: italic;
+}
+
+.mapa {
+  padding: 30px 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.titulo-ubicacion {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 15px auto;
+  clear: left;
+}
+
+.mapa p {
+  text-align: center;
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales {
+  padding: 2em 0;
+  background-color: #878787;
+  color: white;
+}
+
+.contenido-diferenciales {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.lista-diferenciales {
+  width: 39%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 3.2;
+}
+
+.items::before {
+  content: '✔ ';
+}
+
+.items:first-letter:hover {
+  color: green;
+}
+
+.imagen-diferenciales {
+  width: 59.99%;
+  border-radius: 5%;
+}
+
+.video {
+  width: auto;
+  margin: 8em auto 2em auto;
+}
+
+.videos-youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video1 {
+  padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background: white;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+    position: static;
+  }
+  .listaNavegacion {
+    text-align: center;
+  }
+
+  .listaNavegacion a {
+    color: black;
+    font-size: 100%;
+  }
+  .caja,
+  .bloquePrincipal,
+  .mapa-contenido,
+  .contenido-diferenciales,
+  .video {
+    width: auto;
+  }
+  .lista-diferenciales,
+  .imagen-diferenciales {
+    width: 100%;
+  }
+
+  .videos-youtube {
+    display: inline-block;
+    padding-bottom: 25px; /* Adecua este valor para controlar la altura del video */
+    position: relative;
+  }
+  .videos-youtube iframe {
+    width: 100%;
+    position: relative;
+  }
+  .video1 {
+    padding: 20px 0;
+  }
+}
